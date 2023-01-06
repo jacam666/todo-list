@@ -1,0 +1,42 @@
+body {
+    /*background-image: url("https://images.pexels.com/photos/11911068/pexels-photo-11911068.jpeg?auto=compress&cs=tinysrgb&w=1200");*/
+    /*background-image: url("https://images.pexels.com/photos/5797899/pexels-photo-5797899.jpeg?auto=compress&cs=tinysrgb&w=1200");*/
+    background-image: url("https://images.pexels.com/photos/6373406/pexels-photo-6373406.jpeg?auto=compress&cs=tinysrgb&w=1200");
+}
+.container {
+    text-align: center;
+    /*background-color: #1E6AE1;
+    background-color: #1ee196;*/
+    color: rgb(0, 0, 0);
+    /*border: 1px solid black;*/
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#inputTask {
+    background-color: #1ECBE1;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+#addTask,
+#removeTask,
+button {
+    background-color: #1ECBE1;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+li {
+    list-style-position: inside;
+    text-align: center;
+}
+
+/* chose the background colors and button colors after researching that these two colors are analogous to each other */
