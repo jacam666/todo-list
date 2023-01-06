@@ -16,7 +16,6 @@ function renderTodo(text) {
             checked.style.setProperty("text-decoration", "none"); // removes line through if unchecked.
         }
         });
-        // moved the remove task button outside of the renderTodo function due to when unchecking the checkbox another remove task button would appear.
         const removeTask = document.createElement('button');
         removeTask.type = 'button';
         removeTask.id = 'removeTask'; // added an id to the created element so i could style it differently to the remove button.
@@ -39,6 +38,12 @@ function addTodo(text) {
     todoItems.push(toDo); // pushes the task to our array.
     renderTodo(text); // finally invoke(call) your renderTodo function in the addTodo function,so it will be invoked each time a new todo item is added
 };
+
+document.getElementById("inputTask").addEventListener("keypress", function(event) {
+    if(event.key === "Enter") {
+        document.getElementById("addTask").click();
+    }
+})
 
 const addButton = document.querySelector('#addTask');
 addButton.addEventListener('click', () => { //Add a click event-listener to your button, when the button is clicked.
