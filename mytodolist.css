@@ -21,7 +21,7 @@ h2{
 
 
 button {
-    background-color: #1ECBE1;
+    background-color: #e34f4f;
     color: black;
     padding-left: 15px;
     padding-right: 15px;
@@ -29,7 +29,7 @@ button {
     border: none;
 }
 #addTask{
-    background-color: #1ECBE1;
+    background-color: #27cf73;
     color: black;
     padding-left: 15px;
     padding-right: 15px;
