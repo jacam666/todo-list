@@ -1,5 +1,7 @@
 body {
     background-image: url("https://images.pexels.com/photos/6373406/pexels-photo-6373406.jpeg?auto=compress&cs=tinysrgb&w=1200");
+    background-size:inherit;
+
 }
 .container {
     text-align: center;
@@ -44,9 +46,17 @@ button {
     border: none;
 }
 
+#editTask {
+    background-color: #cdeb26;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 5px;
+}
+
 li {
     list-style-position: inside;
     text-align: center;
 }
-
-/* chose the background colors and button colors after researching that these two colors are analogous to each other */

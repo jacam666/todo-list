@@ -26,8 +26,14 @@ function renderTodo(text) {
             const task = removeTask.parentNode; // Get the parent node of the removeTask button, which is the <li> element containing the task
             const taskList = task.parentNode; // Get the parent node of the task, which is the <ul> element
             taskList.removeChild(task); // Remove the task from the task list
-    })
-};
+    });
+
+    const editTask = document.createElement('button');
+    editTask.type = 'button';
+    editTask.id = 'editTask';
+    editTask.innerText = 'Edit';
+    task.appendChild(editTask); 
+}
 
 function addTodo(text) {
     const toDo = {
