@@ -1,8 +1,7 @@
 body {
-    background-image: url("https://images.pexels.com/photos/6373406/pexels-photo-6373406.jpeg?auto=compress&cs=tinysrgb&w=1200");
-    background-size:inherit;
-
-}
+    background: url('https://images.pexels.com/photos/6373406/pexels-photo-6373406.jpeg?auto=compress&cs=tinysrgb&w=1200') no-repeat;
+    background-size: cover;
+} 
 .container {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -59,4 +58,5 @@ button {
 li {
     list-style-position: inside;
     text-align: center;
-}
+} 
+
