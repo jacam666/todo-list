@@ -20,6 +20,15 @@ h2{
     border: 1px solid black;
 }
 
+/*button {
+    background-color: #e34f4f;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    border: none;
+}*/
+
 button {
     background-color: #e34f4f;
     color: black;
@@ -27,7 +36,17 @@ button {
     padding-right: 15px;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.5s; /* Add a transition for the hover effect */
+    transition: all 0.3s ease-in-out;
+    margin: 3px;
 }
+
+button:hover {
+    background-color: #efa6a6; /* Change the background color on hover */
+    transform: scale(1.2);
+}
+
 #addTask{
     background-color: #27cf73;
     color: black;
@@ -35,7 +54,15 @@ button {
     padding-right: 15px;
     border-radius: 6px;
     border: none;
+    transition: background-color 0.5s;
+    transition: all 0.3s ease-in-out;
+    margin-left: 8px;
 }
+#addTask:hover {
+    background-color: #b3f0ce;
+    transform: scale(1.2);
+}
+
 #removeTask {
     background-color: #e34f4f;
     color: black;
@@ -43,18 +70,28 @@ button {
     padding-right: 15px;
     border-radius: 6px;
     border: none;
+    transition: all .3s ease-in-out;
+}
+#removeTask:hover {
+    background-color: #efa6a6;
+    transform: scale(1.2);
 }
 
 #editTask {
-    background-color: #cdeb26;
+    background-color: #cde542;
     color: black;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 6px;
     border: none;
     margin-left: 5px;
+    transition: background-color 0.5s;
+    transition: all .3s ease-in-out; 
 }
-
+#editTask:hover {
+    background-color: #deec8c;
+    transform: scale(1.2);
+}
 li {
     list-style-position: inside;
     text-align: center;
