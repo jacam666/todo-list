@@ -23,9 +23,11 @@ function renderTodo(text) {
         task.appendChild(removeTask);
     
         removeTask.addEventListener('click', () => { //Add an event listener on this button that will remove that task when clicked and update the DOM.
+            //alert('Are you sure you want to remove this task?')
             const task = removeTask.parentNode; // Get the parent node of the removeTask button, which is the <li> element containing the task
             const taskList = task.parentNode; // Get the parent node of the task, which is the <ul> element
             taskList.removeChild(task); // Remove the task from the task list
+            
     });
 
     const editTask = document.createElement('button');
@@ -36,6 +38,11 @@ function renderTodo(text) {
 }
 
 function addTodo(text) {
+    if (todoItems.length >= 20) {
+        alert("You can't add more than 25 tasks!");
+        return;
+    }
+
     const toDo = {
         text: text,
         checked: false,
@@ -79,3 +86,8 @@ remove.addEventListener('click', () => { // Add a click event listener to the bu
         alert('There is nothing to remove'); // Do not forget to check if we have tasks or not, and alert user if there is nothing to remove.
     }
 });
+
+
+/* if(task > 25) {
+            alert("You've entered too many tasks");
+        } */

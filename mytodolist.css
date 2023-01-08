@@ -1,3 +1,8 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     background: url('https://images.pexels.com/photos/6373406/pexels-photo-6373406.jpeg?auto=compress&cs=tinysrgb&w=1200') no-repeat;
     background-size: cover;
@@ -19,15 +24,6 @@ h2{
     border-radius: 6px;
     border: 1px solid black;
 }
-
-/*button {
-    background-color: #e34f4f;
-    color: black;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 6px;
-    border: none;
-}*/
 
 button {
     background-color: #e34f4f;
